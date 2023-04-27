@@ -12,11 +12,12 @@ import tkinter
 import tkinter.font
 import random
 
-lotto_num = range(10,46)
+lotto_num = range(1,46)
 
 def buttonClick():
-    print(random.sample(lotto_num,6))
-    
+    label = tkinter.Label(window, text=str(random.sample(lotto_num,6)))
+    label.pack()
+
 
 window = tkinter.Tk()
 window.title("lotto")
